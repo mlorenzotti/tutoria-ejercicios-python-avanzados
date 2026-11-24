@@ -3,7 +3,7 @@ def contar_letras(palabra):
     conteo={}
     for letra in palabra: 
         conteo[letra] = conteo.get(letra, 0) + 1
-        return conteo
+    return conteo
 
 def son_anagramas(palabra1, palabra2):
     return contar_letras(palabra1)==contar_letras(palabra2)
